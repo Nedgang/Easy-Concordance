@@ -150,12 +150,12 @@ The results directory will contain 2 sub-directories
 - concordance_probes.tsv: Concordance results per probes.
 - concordance_samples.tsv: Concordance results per samples.
 
-## Automatic checks:
+## Automatic checks
 This tool only check that it compare the right variant and sample, otherwise there is no check nor correction on the quality of the data used for computation.
 This is not optimised for that, and would not be as efficient as dedicated tool for that purpose.
 
 ## Pre-processing sequencing and genotyping files
-The final genotyping and sequencing file must both be normalized into biallelic records, contain the same sites, and be in the same order.
+The final genotyping and sequencing file must both be normalized into biallelic records, contain the same sites and samples, and be in the same order.
 It also is recommanded to remove any QUAL, FILTER, INFO or FORMAT (besides Genotype) from the files. Those information are not needed for computation, and removing them, especially in the case of numerous sample, can significanly reduce both the files sizes and computation times.
 
 Here are some command example using bcftools for formatting your data to the correct format.
