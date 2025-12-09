@@ -1,4 +1,5 @@
 # Easy_Concordance 🧬 💻
+[![DOI](https://zenodo.org/badge/1108490133.svg)](https://doi.org/10.5281/zenodo.17865414)
 
 ## What is it?
 Python tool to estimate concordance between genotyping and sequencing using Cohen's Kappa.
